@@ -2,54 +2,76 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         <title>Gavon Trubee - Portfolio</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
     </head>
     <body>
-      <header>
-        <nav>
-          <div class="container">
-            <h1>Gavon Trubee</h1>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-              </ul>
+      <nav id="desktop-nav">
+        <div class="logo">Gavon Trubee</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Gavon Trubee</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
           </div>
-        </nav>
-      </header>
-
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section_text">
+          <p class="section_text_p1">Hello, I'm</p>
+          <h1 class="title">Gavon Trubee</h1>
+          <p class="section_text_p2">Software Engineer</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('assets/Gavon-Trubee-Resume.pdf')">Download Résumé</button>
+          </div>
+          <div class="socials-container">
+            <a target="_blank" href="https://www.linkedin.com/in/gavon-trubee/"><img src="assets/linkedin.png" alt="My LinkedIn profile" class="icon" /></a>
+            <a target="_blank" href="https://github.com/gtrubee"><img src="assets/github.png" alt="My Github profile" class="icon" /></a>
+          </div>
+        </div>
+      </section>
+      <!--
       <section id="about">
-        <div class="container">
-          <h2>About Me</h2>
-          <p>Fill this later</p>
-        </div>
-      </section>
-
-      <section id="projects">
-        <div class="container">
-          <h2>Projects</h2>
-          <div class="project-card">
-            <h3>Project Title</h3>
-            <p>Description</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img src="assets/education.png" alt="Education icon" class="icon" />
+                <h3>Education</h3>
+                <p>B.S. <br />Computer Science</p>
+              </div>
+              <div class="details-container">
+                <img src="assets/education.png" alt="Education icon" class="icon" />
+                <h3>Education</h3>
+                <p>B.S. <br />Computer Science</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sequi dolor vel totam sint consequuntur. Dignissimos et, nesciunt harum, hic perspiciatis iure id perferendis deleniti consequuntur similique ratione nemo explicabo repellat dolorem deserunt, ad consectetur. Autem earum fugiat temporibus aut, aliquid voluptate harum, voluptas excepturi obcaecati delectus, facere nostrum neque.</p>
+            </div>
           </div>
         </div>
       </section>
-
-      <section id="contact">
-        <div class="container">
-          <h2>Contact Me</h2>
-          <p>You can reach me at gtrubee11@icloud.com</p>
-        </div>
-      </section>
-
-      <footer>
-        <div class="container">
-          <p>&copy; 2023 Gavon Trubee</p>
-        </div>
-      </footer>
-      
+    -->
       <script src="script.js"></script>
     </body>
 </html>
