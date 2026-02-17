@@ -404,15 +404,17 @@ ul {
 }
 
 .about__detail {
-  display: flex;
+  display: grid;
+  grid-template-columns: 90px 1fr;
   gap: var(--space-md);
+  align-items: baseline;
 }
 
 .about__detail-label {
   font-size: var(--font-size-sm);
   font-weight: 600;
   color: var(--color-text);
-  min-width: 100px;
+  text-align: left;
 }
 
 .about__detail-value {
@@ -793,8 +795,11 @@ ul {
     margin: 0 auto;
   }
 
-  .about__detail {
-    justify-content: center;
+  .about__details {
+    display: inline-flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: left;
   }
 
   .projects__grid {
